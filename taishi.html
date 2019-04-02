@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>泰式按摩椅</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#wrap{
+			/*background: #181717;*/
+			
+		}
+		a{
+			text-decoration: none;
+		}
+		.header_wrap{
+			height: 4.6rem;
+			background-color: #f5f5f5;
+			line-height: 4.6rem;
+		}
+		.header{
+			width: 1200px;
+			margin: auto;
+			font-size: 18px;
+			
+			
+		}
+		#head{
+			display: flex;
+			flex-direction: row;
+		    align-items: center;
+		    justify-content:space-around;
+		}
+		.header a{
+			color: #333333;
+			text-decoration: none;
+		}
+		.logo{
+			font-size: 30px;
+			color: #0f0f0f;
+		}
+		.swiper-container img{
+				width: 100%;
+			}
+		.marlef{
+			margin-left: 4px;
+		}
+		.marrit{
+			margin-right: 4px;
+			vertical-align: text-top;
+		}
+		.change:hover{
+			color: #1f55a3;
+		}
+		.show{
+			position: relative;
+		}
+		.hide{
+			position: absolute;
+			width: 158px;
+			background-color: #ffffff;
+			z-index: 10000;
+			border-top: 1px solid #1f55a3;
+		    font-size: 18px;
+		    color: #333333;
+		    line-height: 2.2rem;
+		    left: -2rem;
+		    top: 4.4rem;
+		    background-color: #f5f5f5;
+		    display: none;
+		}
+		.hide ul{
+			list-style-type: none;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		/*参数*/
+		.number{
+			height: 64px;
+			background-color: #ffffff;
+	        opacity: 0.6;
+	        width: 100%;
+	        line-height: 64px;
+	        text-align: center;
+	        position: absolute;
+		}
+		.number a{
+			color: #333333;
+			
+		}
+		.jishu{
+			margin-left: 37px;
+		}
+		/*内容*/
+		.content{
+		font-size: 0;
+		}
+        .content img{
+        	width: 100%;
+        }
+	  
+		/*底部*/
+		.footer{
+			width: 100%;
+			height: 140px;
+			background-color: #f5f5f5;
+			text-align: center;
+			overflow: hidden;
+		}
+		.footer p{
+			font-size: 12px;
+			color: #000000;
+			margin-top: 50px;
+		}
+		
+	</style>
+	<body>
+		<div id="wrap">
+			<!--头部-->
+			<div class="header_wrap">
+				<div class="header">
+					<div id="head">
+					<a href="index.html"><span class="logo">OMIEYEA</span></a>
+					<a href="index.html" class="change">首页</a>
+					<div class="show">
+					<span class="active" style="color: #1F55A3;">按摩椅<img class="marlef" src="img/black3.png" alt="" /></span>	
+					<div class="hide">
+					<ul>
+						<li><a href="0anmoyi.html" class="change">零重力按摩椅</a></li>
+						<li><a href="taishi.html" style="color: #1F55A3;" class="change">泰式按摩椅</a></li>
+						<li><a href="haohua.html" class="change">太空舱按摩椅</a></li>
+					</ul>
+				    </div>
+					</div>				
+					<a href="saodi.html" class="change">扫地机器人</a>
+					<a href="kongqi.html" class="change">空气净化器</a>
+					<a href="zhineng.html" class="change">智能净水器</a>
+					<a href="aboutUS.html" class="change">关于我们</a>
+					<a href="#" class="change"><img class="marrit" src="img/phone.png"/>400-0393-111</a>	
+					</div>
+					
+				</div>
+				
+			</div>
+			<!--产品参数-->
+			<div class="number">
+				<a href="taishi.html" style="color: #1f55a3;">产品展示</a>
+				<a href="taishinum.html" class="jishu">技术参数</a>
+			</div>
+			<!--内容-->
+	   <div class="content">
+			<img src="img/taishi/black_main_img_1.png"/>
+			<img src="img/taishi/black_main_img_2.png"/>
+			<img src="img/taishi/black_main_img_3.png"/>
+			<img src="img/taishi/black_main_img_4.png"/>
+			<img src="img/taishi/black_main_img_5.png"/>
+	   </div>
+
+	     <!--底部-->
+			<div class="footer">
+				<p>Copyright 2017 by OMY Corp.All Right Reserved. 版权所有</p>
+				<p style="margin-top: 10px;">欧米亚电器（中国）官方网站</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>	
+<script type="text/javascript">
+ 
+
+$(".show").hover(function(){
+			$(".hide").slideDown(100);
+		},function(){
+			$(".hide").slideUp(100);
+		})
+		$(".scal").hover(function(){
+			$(this).css('transform','scale(1.03)');
+			$(this).css('transition','all .5s');
+		},function(){
+			$(this).css('transform','scale(1)');
+			$(this).css('transition','all .3s');
+		})
+									
+											
+									
+
+</script>
